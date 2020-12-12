@@ -1,0 +1,187 @@
+:root 
+{
+   --gray: #63687e;
+   --gray1: #aeb3cb;
+   --gray2: #f0f2fa;
+   --face: #198ff5;
+   --twitter: #1ca0f2;
+   --lima: #1db489;
+   --instagram: linear-gradient(to right, #fdc468, #df4996);
+   --youtube: #c4032a;
+}
+
+*
+{
+   margin: 0;
+   padding: 0;
+}
+
+html 
+{
+   font-size: 6.25%;
+}
+
+body 
+{
+   width: 100%;
+   height: auto;
+   box-sizing: border-box;
+   font-family: 'Inter', sans-serif;
+   font-size: 14rem;
+}
+
+.dashboard 
+{
+   width: 85%;
+   margin: 0 auto;
+}
+
+h1 
+{
+   margin-top: 40px;
+   font-size: 22rem;
+}
+
+.dashboard h2 
+{
+   font-size: 13.4rem;
+   margin-top: 5px;
+   color: var(--gray);
+}
+
+.theme 
+{
+   height: 80px;
+   border-top: 1.5rem solid var(--gray);
+   margin-top: 20px;
+   padding-top: 17px;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-between;
+}
+
+.theme p
+{
+   font-size: 13.35rem;
+   font-weight: 700;
+   color: var(--gray);
+}
+
+.light-dark 
+{
+   width: 42px;
+   height: 22px;
+   border-radius: 10px;
+   background-color: var(--gray1);
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.circle 
+{
+   width: 17px;
+   height: 17px;
+   border-radius: 50%;
+   background-color: var(--gray2);
+   margin: 0 3px;
+}
+
+.container 
+{
+   display: grid;
+   grid-template: repeat(4, 1fr) / 1fr;
+   row-gap: 25px;
+   text-align: center;
+}
+
+.item 
+{
+   border-radius: 5px;
+   background-color: var(--gray2);
+   color: var(--gray);
+}
+
+.item:first-child 
+{
+   border-top: 4px solid var(--face);
+}
+
+.item:nth-of-type(2)
+{
+   border-top: 4px solid var(--twitter);
+}
+
+.item:nth-of-type(3)
+{
+   border-top: 4px solid transparent;
+   border-image: var(--instagram) 1;
+}
+
+.item:last-child
+{
+   border-top: 4px solid var(--youtube);
+}
+
+.social 
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 25px;
+   font-size: 11.5rem;
+   font-weight: 700;
+   letter-spacing: 0.3rem;
+}
+
+.social img 
+{
+   margin-right: 7px;
+}
+
+.followers p:first-child 
+{
+   font-size: 50rem;
+   font-weight: 700;
+   margin-top: 20px;
+   color: black;
+}
+
+.followers p:nth-of-type(2)
+{
+   font-size: 12.5rem;
+   font-weight: 400;
+   letter-spacing: 3.5px;
+   text-transform: uppercase;
+   margin-top: 2px;
+}
+
+.followers p:last-child
+{
+   color: var(--lima);
+   font-size: 11.5rem;
+   font-weight: 700;
+   margin: 25px 0;
+   letter-spacing: 0.3rem;
+}
+
+.followers p span
+{
+   background-image: url(https://omarsav.com/pictures/frontmentor/icon-up.svg);
+   width: 8px;
+   height: 8px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   display: inline-block;
+}
+
+.followers p .down
+{
+   background-image: url(https://omarsav.com/pictures/frontmentor/icon-down.svg);
+}
+
+.item .followers .youtube
+{
+   color: var(--youtube);
+}
