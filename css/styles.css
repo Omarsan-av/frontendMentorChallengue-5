@@ -30,16 +30,17 @@ body
    font-size: 14rem;
 }
 
-.dashboard 
+.dashboard, .statistics
 {
    width: 85%;
    margin: 0 auto;
+   margin-bottom: 50px;
 }
 
 h1 
 {
    margin-top: 40px;
-   font-size: 22rem;
+   font-size: 22.5rem;
 }
 
 .dashboard h2 
@@ -95,7 +96,7 @@ h1
    text-align: center;
 }
 
-.item 
+.item, .item2
 {
    border-radius: 5px;
    background-color: var(--gray2);
@@ -156,7 +157,7 @@ h1
    margin-top: 2px;
 }
 
-.followers p:last-child
+.followers p:last-child, .views p:last-child
 {
    color: var(--lima);
    font-size: 11.5rem;
@@ -165,7 +166,7 @@ h1
    letter-spacing: 0.3rem;
 }
 
-.followers p span
+.followers p span, .views p span
 {
    background-image: url(https://omarsav.com/pictures/frontmentor/icon-up.svg);
    width: 8px;
@@ -174,14 +175,66 @@ h1
    background-repeat: no-repeat;
    background-size: contain;
    display: inline-block;
+   margin-right: 2px;
 }
 
-.followers p .down
+.followers p .down, .views p .down
 {
    background-image: url(https://omarsav.com/pictures/frontmentor/icon-down.svg);
 }
 
-.item .followers .youtube
+.item .followers .negative, .item2 .views .negative
 {
    color: var(--youtube);
+}
+
+.statistics h2 
+{
+   font-size: 22.5rem;
+   margin: 50px 0 30px;
+   letter-spacing: 0.5px;
+   color: var(--gray);
+}
+
+.container2
+{
+   display: grid;
+   grid-template: repeat(8, 1fr) / 1fr;
+   row-gap: 15px;
+}
+
+.item2 
+{
+   padding: 25px 25px 20px;
+}
+
+.red-social, .views
+{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+.red-social
+{
+   margin-bottom: 25px;
+}
+
+.red-social p
+{
+   font-size: 13.5rem;
+   font-weight: 700;
+}
+
+.views p:first-child 
+{
+   font-size: 30rem;
+   font-weight: 700;
+   color: black;
+}
+
+.views p:last-child 
+{
+   font-size: 12px;
+   font-weight: 700;
 }
