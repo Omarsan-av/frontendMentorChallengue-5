@@ -25,10 +25,14 @@
 //       item[3].querySelector('.followers').lastElementChild.style.color = 'hsl(356, 69%, 56%)';
 //    }
 // });
-
 const boton = document.querySelector('#lightDark');
 const configUser = window.matchMedia('(prefers-color-scheme: dark)');
 const localConfig = localStorage.getItem('tema');
+
+// boton.addEventListener('click', ()=>
+// {
+//    boton.classList.toggle('prueba');
+// })
 
 if (localConfig === 'dark') 
 {

@@ -2,15 +2,19 @@
 :root 
 {
    --gray: #63687e;   
-   --gray1: #aeb3cb;
+   --overview: #63687e;   
+   --borderTheme: #63687e;
+   --toogle: #aeb3cb;
    --face: #198ff5;
    --twitter: #1ca0f2;
    --lima: #1db489;
+   --lima-white: #1db489;
    --instagram: linear-gradient(to right, #fdc468, #df4996);
    --youtube: #c4032a;
    --bg: #fff;
    --lightDark: #000;
    --color-item: #f0f2fa;
+   --justifyContent: flex-end;
 }
 
 /* Para el tema oscuro */
@@ -19,7 +23,13 @@
    --bg: #1e202a;
    --color-item: #252a41;
    --lightDark: #fff;
-   --gray: #aeb3cb;
+   --gray: #8b97c6;
+   --lima-white: #fff;
+   --youtube: #dc414c;
+   --overview: #fff;
+   --borderTheme: #4f515994;
+   --toogle: linear-gradient(to right, #378fe6, #3eda82);
+   --justifyContent: flex-start;
 }
 
 @media (prefers-color-scheme: dark) 
@@ -28,12 +38,14 @@
    {  
       --bg: #1e202a;
       --lightDark: #fff;
+      --lima-white: #fff;
    }
 
-   :root.light-theme
+   :root .light-theme
    {
       --bg: #fff;
       --lightDark: #000;
+      --lima-white: #1db489;
    }
 }
 
@@ -82,7 +94,7 @@ h1
 .theme 
 {
    height: 80px;
-   border-top: 1.5rem solid var(--gray);
+   border-top: 0.5rem solid var(--borderTheme);
    margin-top: 20px;
    padding-top: 17px;
    box-sizing: border-box;
@@ -102,16 +114,16 @@ h1
    width: 42px;
    height: 22px;
    border-radius: 10px;
-   background-color: var(--gray1);
+   background: var(--toogle);
    display: flex;
-   justify-content: flex-end;
+   justify-content: var(--justifyContent);
    align-items: center;
 }
 
 .circle 
 {
-   width: 17px;
-   height: 17px;
+   width: 18px;
+   height: 18px;
    border-radius: 50%;
    background-color: var(--color-item);
    margin: 0 3px;
@@ -174,6 +186,11 @@ h1
    padding-bottom: 25px;
 }
 
+.item:first-child .followers p:last-child 
+{
+   color:  var(--lima-white);
+}
+
 .followers p:first-child 
 {
    font-size: 50rem;
@@ -227,7 +244,7 @@ h1
    font-size: 22.5rem;
    margin: 50px 0 30px;
    letter-spacing: 0.5px;
-   color: var(--gray);
+   color: var(--overview);
 }
 
 .container2
@@ -264,7 +281,7 @@ h1
 {
    font-size: 30rem;
    font-weight: 700;
-   color: black;
+   color: var(--lightDark);
 }
 
 .views p:last-child 
