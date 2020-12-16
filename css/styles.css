@@ -1,13 +1,40 @@
+/* Para el tema ligth */
 :root 
 {
-   --gray: #63687e;
+   --gray: #63687e;   
    --gray1: #aeb3cb;
-   --gray2: #f0f2fa;
    --face: #198ff5;
    --twitter: #1ca0f2;
    --lima: #1db489;
    --instagram: linear-gradient(to right, #fdc468, #df4996);
    --youtube: #c4032a;
+   --bg: #fff;
+   --lightDark: #000;
+   --color-item: #f0f2fa;
+}
+
+/* Para el tema oscuro */
+:root .dark-theme 
+{
+   --bg: #1e202a;
+   --color-item: #252a41;
+   --lightDark: #fff;
+   --gray: #aeb3cb;
+}
+
+@media (prefers-color-scheme: dark) 
+{
+   :root 
+   {  
+      --bg: #1e202a;
+      --lightDark: #fff;
+   }
+
+   :root.light-theme
+   {
+      --bg: #fff;
+      --lightDark: #000;
+   }
 }
 
 *
@@ -28,6 +55,7 @@ body
    box-sizing: border-box;
    font-family: 'Inter', sans-serif;
    font-size: 14rem;
+   background-color: var(--bg);
 }
 
 .dashboard, .statistics
@@ -41,6 +69,7 @@ h1
 {
    margin-top: 40px;
    font-size: 22.5rem;
+   color: var(--lightDark);
 }
 
 .dashboard h2 
@@ -84,7 +113,7 @@ h1
    width: 17px;
    height: 17px;
    border-radius: 50%;
-   background-color: var(--gray2);
+   background-color: var(--color-item);
    margin: 0 3px;
 }
 
@@ -99,7 +128,7 @@ h1
 .item, .item2
 {
    border-radius: 5px;
-   background-color: var(--gray2);
+   background-color: var(--color-item);
    color: var(--gray);
 }
 
@@ -150,7 +179,7 @@ h1
    font-size: 50rem;
    font-weight: 700;
    margin-top: 20px;
-   color: black;
+   color: var(--lightDark);
 }
 
 .followers p:nth-of-type(2)
