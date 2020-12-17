@@ -14,7 +14,7 @@
    --bg: #fff;
    --lightDark: #000;
    --color-item: #f0f2fa;
-   --justifyContent: flex-end;
+   --circle-toogle: #f0f2fa
 }
 
 /* Para el tema oscuro */
@@ -29,7 +29,6 @@
    --overview: #fff;
    --borderTheme: #4f515994;
    --toogle: linear-gradient(to right, #378fe6, #3eda82);
-   --justifyContent: flex-start;
 }
 
 @media (prefers-color-scheme: dark) 
@@ -68,6 +67,7 @@ body
    font-family: 'Inter', sans-serif;
    font-size: 14rem;
    background-color: var(--bg);
+   transition: 0.5s ease all;
 }
 
 .dashboard, .statistics
@@ -116,8 +116,10 @@ h1
    border-radius: 10px;
    background: var(--toogle);
    display: flex;
-   justify-content: var(--justifyContent);
+   position: relative;
    align-items: center;
+   cursor: pointer;
+   transition: 1s ease all;
 }
 
 .circle 
@@ -125,8 +127,18 @@ h1
    width: 18px;
    height: 18px;
    border-radius: 50%;
-   background-color: var(--color-item);
+   background-color: var(--circle-toogle);
    margin: 0 3px;
+   position: absolute;
+   right: 0;
+   left: unset;
+   transition: 0.5s ease all;
+}
+
+.toogle-circle
+{
+   left: 0;
+   right: unset;
 }
 
 .container 
@@ -142,6 +154,7 @@ h1
    border-radius: 5px;
    background-color: var(--color-item);
    color: var(--gray);
+   transition: 0.5s ease all;
 }
 
 .item:first-child 

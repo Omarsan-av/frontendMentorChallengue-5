@@ -28,11 +28,12 @@
 const boton = document.querySelector('#lightDark');
 const configUser = window.matchMedia('(prefers-color-scheme: dark)');
 const localConfig = localStorage.getItem('tema');
+let circle = boton.querySelector('.circle');
 
-// boton.addEventListener('click', ()=>
-// {
-//    boton.classList.toggle('prueba');
-// })
+boton.addEventListener('click', ()=>
+{
+   circle.classList.toggle('toogle-circle');
+})
 
 if (localConfig === 'dark') 
 {
