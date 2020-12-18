@@ -16,6 +16,8 @@
    --color-item: #f0f2fa;
    --color-circle: #f0f2fa;
    /* --toogle-dark: #1e202a; */
+   --right: 0;
+   --left: unset;
 }
 
 /* Para el tema oscuro */
@@ -31,6 +33,8 @@
    --borderTheme: #4f515994;
    --toogle: linear-gradient(to right, #378fe6, #3eda82);
    --color-circle: #1e202a;
+   --right: unset;
+   --left: 0;
 }
 
 @media (prefers-color-scheme: dark) 
@@ -47,6 +51,8 @@
       --borderTheme: #4f515994;
       --toogle: linear-gradient(to right, #378fe6, #3eda82);
       --color-circle: #1e202a;
+      --right: unset;
+      --left: 0;
    }
 
    :root .light-theme
@@ -66,6 +72,8 @@
       --color-item: #f0f2fa;
       --color-circle: #f0f2fa;
       /* --toogle-dark: #1e202a; */
+      --right: 0;
+      --left: unset;
    }
 }
 
@@ -153,18 +161,18 @@ h1
    background-color: var(--color-circle);
    margin: 0 3px;
    position: absolute;
-   right: 0;
-   left: unset;
+   right: var(--right);
+   left: var(--left);
    transition: 0.4s ease all;
 }
 
-.toogle-circle
+/* .toogle-circle
 {
    left: 0;
    right: unset;
-   background-color: var(--color-circle);
+   /* background-color: var(--color-circle); 
    transition: 0.4s ease all;
-}
+} */
 
 .container 
 {

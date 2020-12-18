@@ -3,21 +3,21 @@ const configUser = window.matchMedia('(prefers-color-scheme: dark)');
 const localConfig = localStorage.getItem('tema');
 let circle = boton.querySelector('.circle');
 
-boton.addEventListener('click', ()=>
-{
-   circle.classList.toggle('toogle-circle');
-})
+// boton.addEventListener('click', ()=>
+// {
+//    circle.classList.toggle('');
+// })
 
 if (localConfig === 'dark') 
 {
 	document.body.classList.toggle('dark-theme');
-   circle.classList.add('toogle-circle');
+   // circle.classList.toogle('toogle-circle');
 } 
 
 else if (localConfig === 'light') 
 {
 	document.body.classList.toggle('light-theme');
-   circle.classList.remove('toogle-circle');
+   // circle.classList.toogle('toogle-circle');
 }
 
 boton.addEventListener('click', () => 
