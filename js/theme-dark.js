@@ -38,11 +38,13 @@ boton.addEventListener('click', ()=>
 if (localConfig === 'dark') 
 {
 	document.body.classList.toggle('dark-theme');
+   circle.classList.add('toogle-circle');
 } 
 
 else if (localConfig === 'light') 
 {
-	document.body.classList.toggle('light-theme')
+	document.body.classList.toggle('light-theme');
+   circle.classList.remove('toogle-circle');
 }
 
 boton.addEventListener('click', () => 
@@ -52,15 +54,15 @@ boton.addEventListener('click', () =>
 	if (configUser.matches) 
 	{
 		// Entramos con modo oscuro
-		document.body.classList.toggle('light-theme')
-		colorTema = document.body.classList.contains('light-theme') ? 'light' : 'dark'
+		document.body.classList.toggle('light-theme');
+		colorTema = document.body.classList.contains('light-theme') ? 'light' : 'dark';
 	} 
 	
 	else 
 	{
-		document.body.classList.toggle('dark-theme')
-		colorTema = document.body.classList.contains('dark-theme') ? 'dark' : 'light'
+		document.body.classList.toggle('dark-theme');
+		colorTema = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
 	}
 
-	localStorage.setItem('tema', colorTema)
+	localStorage.setItem('tema', colorTema);
 })

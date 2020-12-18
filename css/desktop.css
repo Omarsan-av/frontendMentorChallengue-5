@@ -1,0 +1,48 @@
+.dashboard 
+{
+   position: relative;
+}
+
+h1
+{
+   font-size: 28rem;
+}
+
+.dashboard h2 
+{
+   font-size: 13rem;
+   letter-spacing: 0.5rem;
+   margin-top: 5px;
+   display: inline-block;
+   margin-bottom: 45px;
+}
+
+.theme 
+{
+   height: auto;
+   margin-top: 0;
+   border: none;
+   display: flex;
+   align-items: center;
+   position: absolute;
+   right: 0;
+   top: 0;
+   padding: 0;
+}
+
+.theme p 
+{
+   margin-right: 20px;
+}
+
+.container 
+{
+   grid-template: 1fr / repeat(4, 1fr);
+   column-gap: 25px;
+}
+
+.container2
+{
+   grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+   gap: 20px 25px;
+}
