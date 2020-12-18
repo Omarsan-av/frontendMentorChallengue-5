@@ -37,18 +37,34 @@
    :root 
    {  
       --bg: #1e202a;
+      --color-item: #252a41;
       --lightDark: #fff;
+      --gray: #8b97c6;
       --lima-white: #fff;
+      --youtube: #dc414c;
+      --overview: #fff;
+      --borderTheme: #4f515994;
+      --toogle: linear-gradient(to right, #378fe6, #3eda82);
    }
 
    :root .light-theme
    {
+      --gray: #63687e;   
+      --overview: #63687e;   
+      --borderTheme: #63687e;
+      --toogle: #aeb3cb;
+      --face: #198ff5;
+      --twitter: #1ca0f2;
+      --lima: #1db489;
+      --lima-white: #1db489;
+      --instagram: linear-gradient(to right, #fdc468, #df4996);
+      --youtube: #c4032a;
       --bg: #fff;
       --lightDark: #000;
-      --lima-white: #1db489;
-      --circle-toogle: #f0f2fa
+      --color-item: #f0f2fa;
+      --circle-toogle: #f0f2fa;
+      --toogle-dark: #1e202a;
    }
-}
 
 *
 {
