@@ -14,7 +14,7 @@ if (localConfig === 'dark')
    // circle.classList.toogle('toogle-circle');
 } 
 
-else if (localConfig === 'light') 
+else
 {
 	document.body.classList.toggle('light-theme');
    // circle.classList.toogle('toogle-circle');
