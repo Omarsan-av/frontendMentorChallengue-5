@@ -1,23 +1,15 @@
 const boton = document.querySelector('#lightDark');
 const configUser = window.matchMedia('(prefers-color-scheme: dark)');
 const localConfig = localStorage.getItem('tema');
-let circle = boton.querySelector('.circle');
-
-// boton.addEventListener('click', ()=>
-// {
-//    circle.classList.toggle('');
-// })
 
 if (localConfig === 'dark') 
 {
 	document.body.classList.toggle('dark-theme');
-   // circle.classList.toogle('toogle-circle');
 } 
 
-else
+else if (localConfig === 'light') 
 {
 	document.body.classList.toggle('light-theme');
-   // circle.classList.toogle('toogle-circle');
 }
 
 boton.addEventListener('click', () => 

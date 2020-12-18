@@ -17,7 +17,7 @@
    --color-circle: #f0f2fa;
    /* --toogle-dark: #1e202a; */
    --right: 0;
-   --left: unset;
+   /* --left: unset; */
 }
 
 /* Para el tema oscuro */
@@ -33,11 +33,11 @@
    --borderTheme: #4f515994;
    --toogle: linear-gradient(to right, #378fe6, #3eda82);
    --color-circle: #1e202a;
-   --right: unset;
+   /* --right: unset; */
    --left: 0;
 }
 
-@media (prefers-color-scheme: dark) 
+@media(prefers-color-scheme: dark) 
 {
    :root 
    {  
@@ -51,7 +51,7 @@
       --borderTheme: #4f515994;
       --toogle: linear-gradient(to right, #378fe6, #3eda82);
       --color-circle: #1e202a;
-      --right: unset;
+      --right: 'unset';
       --left: 0;
    }
 
@@ -73,7 +73,7 @@
       --color-circle: #f0f2fa;
       /* --toogle-dark: #1e202a; */
       --right: 0;
-      --left: unset;
+      --left: 'unset';
    }
 }
 
