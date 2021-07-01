@@ -94,7 +94,7 @@ body
    font-family: 'Inter', sans-serif;
    font-size: 14rem;
    background-color: var(--bg);
-   transition: 0.5s ease all;
+   transition: 1.5s ease all;
 }
 
 .dashboard, .statistics
